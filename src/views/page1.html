@@ -1,0 +1,21 @@
+<div style="height:50px;text-align:center;font-weight:bold;background:green">
+    {{data.title}}
+</div>
+
+
+<div id="view1" style="height:700px; background:aliceblue" ng-if="data.view1">
+    <div ng-repeat="item in moduleList" ng-click="getData(item)" style="height:50px; color:white; background:rebeccapurple; border-bottom:2px solid black">
+        {{item.title}} :: {{item.desc}}
+    </div>
+
+    <button>{{data.view1Button}}</button>
+</div>
+
+
+<div id="view2" style="height:200px; background:light-blue" ng-if="!data.view1">
+    <div ng-repeat="item in qdataList" ng-click="getData(item)" style="height:50px; color:white; background:rebeccapurple; border-bottom:2px solid black">
+        {{item.qid}} :: {{item.question}}
+    </div>
+
+    <button ng-click="toggleView()">{{data.view2Button}}</button>
+</div>

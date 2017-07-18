@@ -1,6 +1,6 @@
 var app = angular.module("app");
 
 
-app.controller("page1", function($scope) {
+app.controller("page2", function($scope) {
 
 });
