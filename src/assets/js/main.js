@@ -36,9 +36,9 @@ app.run(function($location, $rootScope, $cookies) {
         console.log(new Date());
 
         var userid = $cookies.getObject('userid');
-        if (userid == undefined) {
-            // NOT LOGGED IN
-            $location.path("/");
-        }
+        //if (userid == undefined) {
+        // NOT LOGGED IN
+        //$location.path("/");
+        //}
     });
 });
