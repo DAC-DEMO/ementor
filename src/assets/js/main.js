@@ -37,8 +37,8 @@ app.run(function($location, $rootScope, $cookies) {
 
         var userid = $cookies.getObject('userid');
         if (userid == undefined) {
+            // NOT LOGGED IN
             $location.path("/");
-
         }
     });
 });

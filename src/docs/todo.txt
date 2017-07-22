@@ -8,3 +8,8 @@
 >> Logic for session managent
     >> app.run();
     >> Refer main.js
+
+
+>> CHART::
+    1. http://jtblin.github.io/angular-chart.js/
+    2. http://www.fusioncharts.com/angularjs-charts/#/demos/ex5
