@@ -1,0 +1,10 @@
+:::::: SESSION ::::::::
+>> $location; this comes default with angular.
+    >> It Listens to change in url.
+>> $cookies;
+    >> bower install angular-cookies
+    >> Update index.html
+
+>> Logic for session managent
+    >> app.run();
+    >> Refer main.js
