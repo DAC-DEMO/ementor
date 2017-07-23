@@ -4,6 +4,27 @@
     </div>
 
 
+    <!-- QUETSION -->
+    <div class="row jumbotron" style="background:{{question.divcolor}}" ng-repeat="question in dataList">
+        <div class="col-sm-6 col-sm-offset-3">
+            <b>{{$index + 1}}.</b> {{question.question}}
+            <div class="row">
+                <div class="col-sm-12" ng-repeat="qoption in question.optionList">
+                    <div class="radio">
+                        <label>
+                            <input type="radio" ng-value="qoption.oid"  ng-model="question.useroption" > 
+                                {{qoption.option}}
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+            <input type="btn" class="btn btn-sm btn-primary" value="SUBMIT" ng-click="submit()">
+        </div>
+    </div>
 
 </div>
