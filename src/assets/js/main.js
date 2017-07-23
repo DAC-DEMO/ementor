@@ -25,6 +25,12 @@ app.config(function($routeProvider) {
         "controller": "page2"
     });
 
+
+    $routeProvider.when("/page3", {
+        "templateUrl": "./src/views/page3.html",
+        "controller": "page3"
+    });
+
 });
 
 
